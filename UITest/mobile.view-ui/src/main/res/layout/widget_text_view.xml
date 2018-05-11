@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/inputContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:layout_marginRight="@dimen/px5"
+        android:layout_marginEnd="@dimen/px5"
+        android:minHeight="@dimen/px41">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/px5"
+            android:paddingLeft="@dimen/px5">
+            <TextView
+                android:id="@+id/txtContent"
+                style="@style/blue_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:maxWidth="@dimen/px180"
+                android:minWidth="@dimen/px50"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/txtContent2"
+                style="@style/black_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px3"
+                android:gravity="right|center_vertical"
+                android:text=""
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/icon_arrow_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/px2"
+            android:paddingLeft="@dimen/px3"
+            android:src="@drawable/icon_arrow_left"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewName_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/inputContainer"
+        android:layout_marginLeft="@dimen/px5"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/px41">
+
+        <ImageView
+            android:id="@+id/viewChild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:paddingRight="@dimen/px5"
+            android:src="@drawable/small_black_round_shape"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/viewName"
+            style="@style/black_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtMemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputContainer"
+        android:layout_marginLeft="@dimen/px5"
+        android:layout_marginStart="@dimen/px5"
+        android:paddingRight="@dimen/px5"
+        android:paddingBottom="@dimen/px8"
+        android:text=""
+        android:textColor="@color/gray"
+        android:textSize="@dimen/small"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/txtMemo_line"
+        android:layout_width="match_parent"
+        style="@style/bg_line"
+        android:layout_below="@+id/txtMemo"
+         />
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" > 
+    <item  >  
+        <shape android:shape="rectangle" >  
+            <solid android:color="@android:color/transparent" />  
+        </shape>  
+    </item>       
+    <item  
+        android:bottom="@dimen/px4"
+        android:top="@dimen/px4">    
+        <shape android:shape="rectangle">
+		    <!-- 填充颜色 -->
+		    <solid android:color="@color/black_5alpha"></solid>
+		    <!-- 线的宽度，颜色灰色 -->
+		    <stroke android:width="@dimen/px1" android:color="@color/black_5alpha"></stroke>        
+		    <!-- 矩形的圆角半径 -->
+		    <corners android:radius="@dimen/px4" />       
+		</shape>  
+    </item>  
+    
+</layer-list> 

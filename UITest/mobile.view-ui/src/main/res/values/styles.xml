@@ -1,0 +1,266 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="black_small">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">@dimen/small</item>
+    </style>
+
+    <style name="black_small_bold">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">@dimen/small</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="black_medium">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">@dimen/medium</item>
+    </style>
+
+    <style name="black_medium_bold">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">@dimen/medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="black_normal">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">@dimen/normal</item>
+    </style>
+
+    <style name="black_large">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">@dimen/large</item>
+    </style>
+
+    <style name="black_large_bold">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">@dimen/large</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="black_middle_huge">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">@dimen/px50</item>
+    </style>
+
+    <style name="black_huge_bold">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">@dimen/px70</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="black_medium3">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">@dimen/medium2</item>
+    </style>
+
+    <style name="white_small">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">@dimen/small</item>
+    </style>
+
+    <style name="white_medium">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">@dimen/medium</item>
+    </style>
+
+    <style name="white_medium_bold">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">@dimen/medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="white_normal">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">@dimen/normal</item>
+    </style>
+
+    <style name="white_large">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">@dimen/large</item>
+    </style>
+
+    <style name="white_large_bold">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">@dimen/large</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="white_xlarge">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">@dimen/px26</item>
+    </style>
+
+    <style name="blue_small">
+        <item name="android:textColor">#0066AA</item>
+        <item name="android:textSize">@dimen/small</item>
+    </style>
+
+    <style name="blue_medium">
+        <item name="android:textColor">#0066AA</item>
+        <item name="android:textSize">@dimen/medium</item>
+    </style>
+
+    <style name="blue_large">
+        <item name="android:textColor">#0066AA</item>
+        <item name="android:textSize">@dimen/large</item>
+    </style>
+
+    <style name="gray_small">
+        <item name="android:textColor">#AAAAAA</item>
+        <item name="android:textSize">@dimen/small</item>
+    </style>
+
+    <style name="gray_extra_small">
+        <item name="android:textColor">#AAAAAA</item>
+        <item name="android:textSize">@dimen/xsmall</item>
+    </style>
+
+    <style name="gray_medium">
+        <item name="android:textColor">#AAAAAA</item>
+        <item name="android:textSize">@dimen/medium</item>
+    </style>
+
+    <style name="red_small">
+        <item name="android:textColor">#FFCC0000</item>
+        <item name="android:textSize">@dimen/small</item>
+    </style>
+
+    <style name="red_small_bold">
+        <item name="android:textColor">#FFCC0000</item>
+        <item name="android:textSize">@dimen/small</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="red_medium">
+        <item name="android:textColor">#FFCC0000</item>
+        <item name="android:textSize">@dimen/medium</item>
+    </style>
+
+    <style name="red_medium_bold">
+        <item name="android:textColor">#FFCC0000</item>
+        <item name="android:textSize">@dimen/medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="red_normal">
+        <item name="android:textColor">#FFCC0000</item>
+        <item name="android:textSize">@dimen/normal</item>
+    </style>
+
+    <style name="red_large">
+        <item name="android:textColor">#FFCC0000</item>
+        <item name="android:textSize">@dimen/large</item>
+    </style>
+
+    <style name="red_large_bold">
+        <item name="android:textColor">#FFCC0000</item>
+        <item name="android:textSize">@dimen/px20</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="green_small">
+        <item name="android:textColor">#FF558800</item>
+        <item name="android:textSize">@dimen/small</item>
+    </style>
+
+    <style name="green_large">
+        <item name="android:textColor">#FF008800</item>
+        <item name="android:textSize">@dimen/large</item>
+    </style>
+
+    <style name="green_medium">
+        <item name="android:textColor">#448800</item>
+        <item name="android:textSize">@dimen/medium</item>
+    </style>
+
+    <style name="green_medium_bold">
+        <item name="android:textColor">#448800</item>
+        <item name="android:textSize">@dimen/medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="sDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/win_background</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!-- 线条 -->
+    <style name="line_green">
+        <item name="android:background">@color/green</item>
+        <item name="android:layout_marginBottom">@dimen/px10</item>
+        <item name="android:layout_marginTop">@dimen/px10</item>
+    </style>
+
+    <style name="btn_txt">
+        <item name="android:width">@dimen/px55</item>
+        <item name="android:height">@dimen/px46</item>
+        <item name="android:textSize">@dimen/medium</item>
+        <item name="android:layout_marginLeft">@dimen/px5</item>
+        <item name="android:layout_marginRight">@dimen/px5</item>
+        <item name="android:textColor">@drawable/btn_color_green_white</item>
+        <item name="android:background">@drawable/btn_bg_white_green</item>
+    </style>
+    <!-- 按钮 -->
+    <style name="dialog_btn_ok" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@drawable/btn_color_white_green</item>
+        <item name="android:textSize">@dimen/medium</item>
+        <item name="android:width">@dimen/px108</item>
+        <item name="android:height">@dimen/px36</item>
+        <item name="android:layout_marginLeft">@dimen/px5</item>
+        <item name="android:layout_marginRight">@dimen/px5</item>
+        <item name="android:background">@drawable/btn_bg_green_white</item>
+    </style>
+
+    <style name="dialog_btn_cancel" parent="@style/dialog_btn_ok">
+        <item name="android:textColor">@drawable/btn_color_green_white</item>
+        <item name="android:background">@drawable/btn_bg_white_green</item>
+    </style>
+
+    <!-- 自定义仿IOS的ActionSheet底部Dialog的样式 ，有模糊效果 -->
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+
+    <!--pull to refresh new-->
+    <style name="customized_list_style">
+        <item name="android:divider">@color/transparent</item>
+        <item name="android:listSelector">@color/transparent</item>
+        <item name="ptrDrawable">@color/transparent</item>
+        <item name="ptrHeaderTextAppearance">@style/black_medium</item>
+    </style>
+
+    <!--虚线线-->
+    <style name="bg_line">
+        <item name="android:layout_height">@dimen/px1</item>
+        <item name="android:background">@drawable/img_hline_trans_nav</item>
+    </style>
+    <!--实线-->
+    <style name="bg_line_long">
+        <item name="android:layout_height">@dimen/px1</item>
+        <item name="android:background">@drawable/img_hline_trans_nav</item>
+    </style>
+
+</resources>

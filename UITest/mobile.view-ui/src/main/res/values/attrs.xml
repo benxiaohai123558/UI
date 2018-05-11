@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CommonItem">
+        <attr name="item_key_title" format="string"/>
+        <attr name="item_key_type" format="integer"/>
+        <attr name="item_name" format="reference"/>
+        <attr name="item_context" format="reference"/>
+        <attr name="item_context2" format="reference"/>
+        <attr name="item_memo" format="reference"/>
+        <attr name="item_type" format="enum">
+            <enum name="t_float" value="1"/>
+            <enum name="t_int" value="2"/>
+            <enum name="date" value="3"/>
+            <enum name="string" value="4"/>
+            <enum name="ip" value="5"/>
+            <enum name="time" value="6"/>
+            <enum name="date_time" value="7"/>
+            <enum name="show" value="8"/>
+            <enum name="mail" value="9"/>
+            <enum name="num_keyboard" value="10"/>
+            <enum name="num_wheel" value="11"/>
+            <enum name="bool" value="12"/>
+        </attr>
+        <attr name="item_max_length" format="integer"/>
+        <attr name="item_min_length" format="integer"/>
+        <attr name="item_max" format="integer"/>
+        <attr name="item_min" format="integer"/>
+        <attr name="item_hint" format="reference"/>
+        <attr name="item_hint_color" format="color"/>
+        <attr name="item_memo_color" format="color"/>
+        <attr name="item_password" format="boolean"/>
+        <attr name="item_arrow_left" format="boolean"/>
+        <attr name="item_child" format="boolean"/>
+        <attr name="can_dot" format="boolean"/>
+        <attr name="item_allow_negative" format="boolean"/>
+        <attr name="item_down_img" format="reference"/>
+        <attr name="item_select_img" format="reference"/>
+        <attr name="item_batch_img" format="reference"/>
+        <attr name="item_right_img" format="reference"/>
+        <attr name="item_arrow_bottom" format="boolean"/>
+        <attr name="item_max_dot" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwitchSpinner">
+        <attr name="data" format="reference"/>
+        <attr name="backgroundButton" format="color|reference"/>
+        <attr name="backgroundItem" format="color|reference"/>
+        <attr name="textColorButton" format="color|reference"/>
+        <attr name="textColorItem" format="color|reference"/>
+        <attr name="colorDivider" format="color|reference"/>
+        <attr name="icon" format="reference"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontalSpacing" format="dimension"/>
+        <attr name="verticalSpacing" format="dimension"/>
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="debugDraw" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="FlowLayout_LayoutParams">
+        <attr name="layout_newLine" format="boolean"/>
+        <attr name="layout_horizontalSpacing" format="dimension"/>
+        <attr name="layout_verticalSpacing" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="auto3d">
+        <attr name="textSize" format="dimension"/>
+    </declare-styleable>
+
+    <attr name="direction">
+        <enum name="rightToLeft" value="0"/>
+        <enum name="bottomToTop" value="1"/>
+        <enum name="leftToRight" value="2"/>
+        <enum name="topToBottom" value="3"/>
+    </attr>
+    <declare-styleable name="MultiDirectionSlidingDrawer">
+        <attr name="handle" format="reference"/>
+        <attr name="content" format="reference"/>
+        <attr name="direction"/>
+        <attr name="bottomOffset" format="dimension"/>
+        <attr name="topOffset" format="dimension"/>
+        <attr name="allowSingleTap" format="boolean"/>
+        <attr name="animateOnClick" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="PullToRefresh">
+        <attr name="adapterViewBackground" format="reference|color"/>
+        <attr name="headerBackground" format="reference|color"/>
+        <attr name="headerTextColor" format="color"/>
+        <attr name="mode">
+            <flag name="pullDownFromTop" value="0x1"/>
+            <flag name="pullUpFromBottom" value="0x2"/>
+            <flag name="both" value="0x3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RectangleStampView">
+        <attr name="stamp_bg" format="reference"/>
+        <attr name="stamp_content" format="string|reference"/>
+        <attr name="stamp_color" format="reference"/>
+        <attr name="stamp_text_size" format="dimension|reference"/>
+    </declare-styleable>
+    <!--pull to refresh new-->
+    <declare-styleable name="PullToRefreshNew">
+
+        <!-- A drawable to use as the background of the Refreshable View -->
+        <attr name="ptrRefreshableViewBackground" format="reference|color"/>
+
+        <!-- A drawable to use as the background of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderBackground" format="reference|color"/>
+
+        <!-- Text Color of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextColor" format="reference|color"/>
+
+        <!-- Text Color of the Header and Footer Loading Views Sub Header -->
+        <attr name="ptrHeaderSubTextColor" format="reference|color"/>
+
+        <!-- Mode of Pull-to-Refresh that should be used -->
+        <attr name="ptrMode">
+            <flag name="disabled" value="0x0"/>
+            <flag name="pullFromStart" value="0x1"/>
+            <flag name="pullFromEnd" value="0x2"/>
+            <flag name="both" value="0x3"/>
+            <flag name="manualOnly" value="0x4"/>
+
+            <!-- These last two are depreacted -->
+            <flag name="pullDownFromTop" value="0x1"/>
+            <flag name="pullUpFromBottom" value="0x2"/>
+        </attr>
+
+        <!-- Whether the Indicator overlay(s) should be used -->
+        <attr name="ptrShowIndicator" format="reference|boolean"/>
+
+        <!-- Drawable to use as Loading Indicator. Changes both Header and Footer. -->
+        <attr name="ptrDrawable" format="reference"/>
+
+        <!-- Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableStart" format="reference"/>
+
+        <!-- Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableEnd" format="reference"/>
+
+        <!-- Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. -->
+        <attr name="ptrOverScroll" format="reference|boolean"/>
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextAppearance" format="reference"/>
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header -->
+        <attr name="ptrSubHeaderTextAppearance" format="reference"/>
+
+        <!-- Style of Animation should be used displayed when pulling. -->
+        <attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0"/>
+            <flag name="flip" value="0x1"/>
+        </attr>
+
+        <!-- Whether the user can scroll while the View is Refreshing -->
+        <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean"/>
+
+        <!--
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        -->
+        <attr name="ptrListViewExtrasEnabled" format="reference|boolean"/>
+
+        <!--
+        	Whether the Drawable should be continually rotated as you pull. This only
+        	takes effect when using the 'Rotate' Animation Style.
+        -->
+        <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean"/>
+
+        <!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
+        <attr name="ptrAdapterViewBackground" format="reference|color"/>
+        <attr name="ptrDrawableTop" format="reference"/>
+        <attr name="ptrDrawableBottom" format="reference"/>
+    </declare-styleable>
+
+
+    <!--WightText-->
+    <declare-styleable name="WightText">
+        <!--标题-->
+        <attr name="wt_title" format="string|reference"/>
+        <attr name="wt_title_color" format="color|reference"/>
+        <attr name="wt_title_size" format="dimension"/>
+        <attr name="wt_title_style" format="boolean"/>
+        <!--内容-->
+        <attr name="wt_context" format="string|reference"/>
+        <attr name="wt_context_color" format="color|reference"/>
+        <attr name="wt_context_size" format="dimension"/>
+        <attr name="wt_context_hit" format="string|reference"/>
+        <attr name="wt_context_hit_color" format="color|reference"/>
+        <!--箭头-->
+        <attr name="wt_delete_src" format="reference"/>
+        <attr name="wt_delete_visible" format="boolean"/>
+        <!--删除按钮-->
+        <attr name="wt_arrow_src" format="reference"/>
+        <attr name="wt_arrow_visible" format="boolean"/>
+        <!--是否显示选中效果-->
+        <attr name="wt_is_selector" format="boolean"/>
+        <attr name="wt_selector_bg" format="color|reference"/>
+    </declare-styleable>
+</resources>

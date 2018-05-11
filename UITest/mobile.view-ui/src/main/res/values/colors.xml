@@ -1,0 +1,68 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <color name="transparent">#00000000</color>
+    <color name="iphone_bg_transparent">#ffffffff</color>
+    <color name="green">#66aa00</color>
+    <color name="greenlarge">#FF008800</color>
+    <color name="white">#ffffffff</color>
+    <color name="white_press">#cccccc</color>
+    <color name="green_press">#224400</color>
+    <color name="num_enable">#bbccbb</color>
+    <color name="tab">#42A542</color>
+    <color name="green_light">#07AD1F</color>
+
+    <color name="gray">#333</color>
+    <color name="medium_gray">#666666</color>
+    <color name="light_gray">#999999</color>
+    <color name="cancel_color">#666666</color>
+    <color name="win_background">#80000000</color>
+    <color name="black">#000000</color>
+    <color name="alpha_0.9">#19000000</color>
+    <color name="black_1alpha">#19000000</color>
+    <color name="black_2alpha">#33000000</color>
+    <color name="black_3alpha">#4c000000</color>
+    <color name="black_4alpha">#66000000</color>
+    <color name="black_5alpha">#7f000000</color>
+    <color name="black_6alpha">#99000000</color>
+    <color name="black_7alpha">#b2000000</color>
+    <color name="black_8alpha">#c8000000</color>
+    <color name="black_9alpha">#e5000000</color>
+
+    <color name="white_0alpha">#00ffffff</color>
+    <color name="white_1alpha">#19ffffff</color>
+    <color name="white_2alpha">#33ffffff</color>
+    <color name="white_3alpha">#4cffffff</color>
+    <color name="white_4alpha">#66ffffff</color>
+    <color name="white_5alpha">#7fffffff</color>
+    <color name="white_6alpha">#99ffffff</color>
+    <color name="white_7alpha">#b2ffffff</color>
+    <color name="white_8alpha">#c8ffffff</color>
+    <color name="white_9alpha">#e5ffffff</color>
+
+    <color name="btn_white_start_9alpha">#e5ffffff</color>
+    <color name="btn_white_end_9alpha">#e5cccccc</color>
+    <color name="btn_white_stroke">#aaaaaa</color>
+
+    <color name="blue">#0088cc</color>
+    <color name="blue_press">#006496</color>
+    <color name="blue_7alpha">#b20088cc</color>
+    <color name="blue_9alpha">#e50088cc</color>
+    <color name="btn_blue_start_9alpha">#e50088CC</color>
+    <color name="btn_blue_end_9alpha">#e50066AA</color>
+    <color name="btn_blue_stroke">#0066AA</color>
+
+    <color name="red">#cc0000</color>
+    <color name="red_1_5alpha">#7f990000</color>
+    <color name="red_5alpha">#66cc0000</color>
+    <color name="red_7alpha">#b2cc0000</color>
+    <color name="red_9alpha">#e5cc0000</color>
+
+    <color name="txt_bill_green">#FF00E64C</color>
+
+    <color name="takemeal_has_paid">#04C399</color>
+
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+    <color name="form_selected">#1A000000</color>
+
+</resources>

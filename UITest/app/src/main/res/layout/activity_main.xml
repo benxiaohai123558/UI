@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:visibility="visible">
+
+    <FrameLayout
+        android:layout_width="@dimen/left_view_width"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/px4"
+            android:layout_marginTop="@dimen/px4"
+            android:background="@drawable/panel_black_40"/>
+
+        <View
+            android:layout_width="@dimen/left_view_width1"
+            android:layout_height="@dimen/px680"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px24"
+            android:background="@drawable/white_background"/>
+
+        <View
+            android:layout_width="@dimen/left_view_width2"
+            android:layout_height="@dimen/px2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px704"
+            android:background="@color/white_6alpha"/>
+
+        <View
+            android:layout_width="@dimen/left_view_width3"
+            android:layout_height="@dimen/px2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px706"
+            android:background="@color/white_4alpha"/>
+
+        <View
+            android:layout_width="@dimen/px200"
+            android:layout_height="@dimen/px44"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px4"
+            android:background="@drawable/img_paperclip"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/black_large"
+                android:layout_width="@dimen/px300"
+                android:layout_height="@dimen/px30"
+                android:layout_marginTop="@dimen/px45"
+                android:gravity="center"
+                android:text="set_more"/>
+
+            <ImageView
+                android:layout_width="@dimen/px300"
+                android:layout_height="@dimen/px2"
+                android:background="@color/solid_separate"/>
+
+            <ScrollView
+                android:layout_width="@dimen/px300"
+                android:layout_height="@dimen/hpx540"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/px44"
+                        android:text="@string/app_name"
+                        android:textSize="@dimen/medium"/>
+
+                    <com.zmsoft.widget.textview.WidgetText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:wt_arrow_visible="true"
+                        app:wt_context="@string/app_name"
+                        app:wt_context_hit="@string/app_name"
+                        app:wt_context_hit_color="@color/red"
+                        app:wt_delete_visible="false"
+                        app:wt_is_selector="false"
+                        app:wt_selector_bg="@color/form_selected"
+                        app:wt_title="@string/app_name"
+                        app:wt_title_color="#0066AA"
+                        app:wt_title_size="@dimen/medium"
+                        app:wt_title_style="true"
+                        />
+
+                    <com.zmsoft.widget.textview.WidgetText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:wt_arrow_visible="true"
+                        app:wt_title="商业模式"/>
+
+                    <com.zmsoft.widget.textview.WidgetText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:wt_context="本店会员"
+                        app:wt_title="发卡机构"/>
+
+                    <com.zmsoft.widget.textview.WidgetText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:wt_context="优惠规则？"
+                        app:wt_title="充值优惠"
+                        app:wt_title_style="true"/>
+
+                    <com.zmsoft.widget.textview.WidgetText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:wt_context_hit="可不填"
+                        app:wt_title="绑定手机号"/>
+
+                    <com.zmsoft.widget.textview.WidgetText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:wt_context_hit="必填"
+                        app:wt_title="充值金额"
+                        app:wt_context_hit_color="@color/red"/>
+                </LinearLayout>
+            </ScrollView>
+
+            <ImageView
+                android:layout_width="@dimen/px300"
+                android:layout_height="@dimen/px2"
+                android:background="@color/solid_separate"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

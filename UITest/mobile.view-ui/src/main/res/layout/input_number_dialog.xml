@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px900"
+    android:layout_height="@dimen/hpx400"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/px10" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/input_spec"
+            style="@style/black_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/green_medium_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/input_spec" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/memo"
+        style="@style/gray_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    <View
+        style="@style/line_green"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/px1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hpx280" >
+
+        <com.zmsoft.widget.layouts.FlowLayout
+            android:id="@+id/flowLayout1"
+            android:layout_width="@dimen/px200"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            app:horizontalSpacing="@dimen/px10"
+            app:verticalSpacing="@dimen/px10" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A" 
+                style="@style/btn_txt"
+                android:visibility="invisible"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A" 
+                style="@style/btn_txt"
+                android:visibility="invisible"/>
+            <Button
+                android:id="@+id/btn_backspace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_btn_fallback"
+                style="@style/btn_txt"/>
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7" 
+                style="@style/btn_txt"/>
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8" 
+                style="@style/btn_txt"/>
+            
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9" 
+                style="@style/btn_txt"/>
+            
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4" 
+                style="@style/btn_txt"/>
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5" 
+                style="@style/btn_txt"/>
+            
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6" 
+                style="@style/btn_txt"/>
+            
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1" 
+                style="@style/btn_txt"/>
+            
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2" 
+                style="@style/btn_txt"/>
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3" 
+                style="@style/btn_txt"/>
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" 
+                style="@style/btn_txt"/>
+            <Button
+                android:id="@+id/btn_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="." 
+                style="@style/btn_txt"/>
+            <Button
+                android:id="@+id/btn_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-" 
+                style="@style/btn_txt"/>
+        </com.zmsoft.widget.layouts.FlowLayout>
+
+        <TextView
+            android:id="@+id/input_text"
+            style="@style/black_huge_bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/flowLayout1"
+            android:gravity="center|center_vertical"
+            android:text="TextView" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_tip"
+        style="@style/gray_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:visibility="gone" />
+    <View
+        style="@style/line_green"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/px1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_clear"
+            style="@style/dialog_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_btn_clear" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/dialog_btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/dialog_btn_ok" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/dialog_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btn_ok"
+            android:text="@string/dialog_btn_cancel" />
+    </RelativeLayout>
+
+</LinearLayout>

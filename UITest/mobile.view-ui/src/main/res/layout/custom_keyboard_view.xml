@@ -1,0 +1,514 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/hpx200"
+              android:baselineAligned="true"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+    <!-- 自定义键盘 -->
+    <!-- 字母区 -->
+
+    <LinearLayout
+        android:layout_width="@dimen/px640"
+        android:layout_height="@dimen/hpx200"
+        android:layout_marginLeft="@dimen/px15"
+        android:orientation="vertical">
+
+        <!-- 第一排 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/px60">
+
+            <Button
+                android:id="@+id/btn_q"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="Q"
+                android:text="Q"/>
+
+            <Button
+                android:id="@+id/btn_w"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="W"
+                android:text="W"/>
+
+            <Button
+                android:id="@+id/btn_e"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="E"
+                android:text="E"/>
+
+            <Button
+                android:id="@+id/btn_r"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="R"
+                android:text="R"/>
+
+            <Button
+                android:id="@+id/btn_t"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="T"
+                android:text="T"/>
+
+            <Button
+                android:id="@+id/btn_y"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="Y"
+                android:text="Y"/>
+
+            <Button
+                android:id="@+id/btn_u"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="U"
+                android:text="U"/>
+
+            <Button
+                android:id="@+id/btn_i"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="I"
+                android:text="I"/>
+
+            <Button
+                android:id="@+id/btn_o"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="O"
+                android:text="O"/>
+
+            <Button
+                android:id="@+id/btn_p"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="P"
+                android:text="P"/>
+        </LinearLayout>
+        <!-- 第二排 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/px60"
+            android:layout_marginTop="@dimen/px6">
+
+            <Button
+                android:id="@+id/btn_a"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="A"
+                android:text="A"/>
+
+            <Button
+                android:id="@+id/btn_s"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="S"
+                android:text="S"/>
+
+            <Button
+                android:id="@+id/btn_d"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="D"
+                android:text="D"/>
+
+            <Button
+                android:id="@+id/btn_f"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="F"
+                android:text="F"/>
+
+            <Button
+                android:id="@+id/btn_g"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="G"
+                android:text="G"/>
+
+            <Button
+                android:id="@+id/btn_h"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="H"
+                android:text="H"/>
+
+            <Button
+                android:id="@+id/btn_j"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="J"
+                android:text="J"/>
+
+            <Button
+                android:id="@+id/btn_k"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="K"
+                android:text="K"/>
+
+            <Button
+                android:id="@+id/btn_l"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="L"
+                android:text="L"/>
+
+            <Button
+                android:id="@+id/btn_slash"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="/"
+                android:text="/"/>
+        </LinearLayout>
+        <!-- 第三排 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/px60"
+            android:layout_marginTop="@dimen/px6">
+
+            <Button
+                android:id="@+id/btn_z"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="Z"
+                android:text="Z"/>
+
+            <Button
+                android:id="@+id/btn_x"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="X"
+                android:text="X"/>
+
+            <Button
+                android:id="@+id/btn_c"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="C"
+                android:text="C"/>
+
+            <Button
+                android:id="@+id/btn_v"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="V"
+                android:text="V"/>
+
+            <Button
+                android:id="@+id/btn_b"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="B"
+                android:text="B"/>
+
+            <Button
+                android:id="@+id/btn_n"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="N"
+                android:text="N"/>
+
+            <Button
+                android:id="@+id/btn_m"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="M"
+                android:text="M"/>
+
+            <Button
+                android:id="@+id/btn_at"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="at"
+                android:text="＠"/>
+
+            <Button
+                android:id="@+id/btn_underline"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="_"
+                android:text="_"/>
+
+            <Button
+                android:id="@+id/btn_colon"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag=":"
+                android:text="@string/colon"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 数字区 -->
+
+    <LinearLayout
+        android:layout_width="@dimen/px330"
+        android:layout_height="@dimen/hpx200"
+        android:layout_marginLeft="@dimen/px25"
+        android:orientation="vertical">
+
+        <!-- 第一排 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/px60">
+
+            <Button
+                android:id="@+id/btn_1"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="1"
+                android:text="@string/one"/>
+
+            <Button
+                android:id="@+id/btn_2"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="2"
+                android:text="@string/two"/>
+
+            <Button
+                android:id="@+id/btn_3"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="3"
+                android:text="@string/three"/>
+
+            <Button
+                android:id="@+id/btn_4"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="4"
+                android:text="@string/four"/>
+
+            <FrameLayout
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/medium">
+
+                <Button
+                    android:id="@+id/btn_backspace"
+                    style="@style/white_large"
+                    android:layout_width="@dimen/px60"
+                    android:layout_height="@dimen/px60"
+                    android:background="@drawable/custom_keyboard_btn"
+                    android:tag="backspace"/>
+
+                <View
+                    android:id="@+id/img_backspace"
+                    android:layout_width="@dimen/px32"
+                    android:layout_height="@dimen/px32"
+                    android:layout_marginLeft="@dimen/medium"
+                    android:layout_marginTop="@dimen/small"
+                    android:background="@drawable/icon_kb_del_w"/>
+            </FrameLayout>
+        </LinearLayout>
+        <!-- 第二排 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/px60"
+            android:layout_marginTop="@dimen/px6">
+
+            <Button
+                android:id="@+id/btn_5"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="5"
+                android:text="@string/five"/>
+
+            <Button
+                android:id="@+id/btn_6"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="6"
+                android:text="@string/six"/>
+
+            <Button
+                android:id="@+id/btn_7"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="7"
+                android:text="@string/seven"/>
+
+            <Button
+                android:id="@+id/btn_8"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="8"
+                android:text="@string/eight"/>
+
+            <Button
+                android:id="@+id/btn_clear"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/medium"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="clear"
+                android:text="@string/dialog_btn_clear"/>
+        </LinearLayout>
+        <!-- 第三排 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/px60"
+            android:layout_marginTop="@dimen/px6">
+
+            <Button
+                android:id="@+id/btn_9"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="9"
+                android:text="@string/nine"/>
+
+            <Button
+                android:id="@+id/btn_0"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="0"
+                android:text="@string/zero_"/>
+
+            <Button
+                android:id="@+id/btn_point"
+                style="@style/white_large"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="."
+                android:text="@string/decimal_point"/>
+
+            <Button
+                android:id="@+id/btn_confirm"
+                style="@style/white_large"
+                android:layout_width="@dimen/px133"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px4"
+                android:background="@drawable/custom_keyboard_btn"
+                android:tag="confirm"
+                android:text="@string/confirm"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

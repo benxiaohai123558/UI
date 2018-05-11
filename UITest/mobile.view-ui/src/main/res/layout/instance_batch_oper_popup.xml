@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px170"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/px6"
+    android:paddingLeft="@dimen/px10"
+    android:paddingRight="@dimen/px10">
+
+    <Button
+        android:id="@+id/edit_num"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px54"
+        android:background="@null"
+        android:tag="EDIT_NUM"
+        android:textSize="@dimen/normal"
+        android:text="@string/edit_instance_num"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_height"
+        style="@style/bg_line" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px54"
+        android:background="@null"
+        android:tag="BACK"
+        android:textSize="@dimen/normal"
+        android:text="@string/cancel_menu"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_height"
+        style="@style/bg_line" />
+
+    <Button
+        android:id="@+id/split"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px54"
+        android:background="@null"
+        android:tag="SPLIT"
+        android:textSize="@dimen/normal"
+        android:text="@string/split_order"/>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">mobile.widget</string>
+    <string name="please_select">請選擇</string>
+    <string name="required_input">必填</string>
+    <string name="not_required_input">可不填</string>
+    <string name="dialog_btn_fallback">回退</string>
+    <!--彈出框-->
+    <string name="dialog_btn_clear">清空</string>
+    <string name="dialog_btn_cancel">取消</string>
+    <string name="dialog_btn_ok">完成</string>
+    <string name="confirm">確認</string>
+    <string name="cancel">取消</string>
+    <string name="finish">完成</string>
+
+    <string name="length_tip_max_ok" formatted="false">已經最長了.</string>
+    <string name="number_tip_max_length" formatted="false">最多%d個數位.</string>
+    <string name="number_tip" formatted="false">%1$d-%2$d之間的數字.</string>
+    <string name="number_tip_min" formatted="false">大於%1$d的數字.</string>
+    <string name="number_tip_max" formatted="false">小於%1$d的數字.</string>
+    <string name="number_min_valid">數字太小</string>
+    <string name="number_max_valid">數字太大</string>
+    <string name="input_error">不符合要求,已取消</string>
+    <string name="how_much_word_left">還可以輸入</string>
+    <string name="word">字</string>
+    <string name="word_over_large_tip_format">字符數不能超過%s</string>
+    <string name="please_input_tip">輸入不能為空哦！</string>
+
+    <string name="pull_to_refresh_pull_label">下拉刷新...</string>
+    <string name="pull_to_refresh_release_label">釋放立即刷新...</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新...</string>
+    <string name="pull_to_refresh_pull_label1">上拉加載...</string>
+    <string name="pull_to_refresh_release_label1">上拉加載...</string>
+    <string name="pull_to_refresh_refreshing_label1">正在加載中...</string>
+
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day_day">日</string>
+    <string name="hour">時</string>
+    <string name="minute_minute">分</string>
+
+    <!--FetchmentStampView-->
+    <string name="all">全部</string>
+    <string name="takemeal_all_taken">已取餐</string>
+
+    <!--数字键-->
+    <string name="zero_zero">00</string>
+    <string name="zero_">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="decimal_point">.</string>
+    <string name="percent">%</string>
+    <string name="semicolon">;</string>
+    <string name="colon">:</string>
+    <string name="number">No.</string>
+    <string name="minus_sign">-</string>
+
+    <!--N10-->
+    <string name="edit_instance_num">修改數量</string>
+    <string name="cancel_menu">退菜</string>
+    <string name="split_order">分單</string>
+</resources>

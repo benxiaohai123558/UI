@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rotation="14">
+
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_hasclear"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:text="@string/all"
+            android:layout_above="@+id/tv_stamp_status"
+            android:textColor="@color/txt_bill_green"
+            android:textSize="@dimen/px30"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_stamp_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/takemeal_all_taken"
+            android:textColor="@color/txt_bill_green"
+            android:textSize="@dimen/px38"
+            android:textStyle="bold"  />
+
+        <TextView
+            android:id="@+id/txt_stamp_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_stamp_status"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="19:35"
+            android:textSize="@dimen/px30" />
+    </RelativeLayout>
+</FrameLayout>
