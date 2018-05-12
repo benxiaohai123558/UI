@@ -97,36 +97,30 @@
                         />
 
                     <com.zmsoft.widget.textview.WidgetText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/wt_arrow"
                         app:wt_arrow_visible="true"
                         app:wt_title="商业模式"/>
 
                     <com.zmsoft.widget.textview.WidgetText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/wt_normal"
                         app:wt_context="本店会员"
                         app:wt_title="发卡机构"/>
 
                     <com.zmsoft.widget.textview.WidgetText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/wt_bold"
                         app:wt_context="优惠规则？"
-                        app:wt_title="充值优惠"
-                        app:wt_title_style="true"/>
+                        app:wt_title="充值优惠"/>
 
                     <com.zmsoft.widget.textview.WidgetText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/wt_arrow"
                         app:wt_context_hit="可不填"
                         app:wt_title="绑定手机号"/>
 
                     <com.zmsoft.widget.textview.WidgetText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/wt_red"
                         app:wt_context_hit="必填"
-                        app:wt_title="充值金额"
-                        app:wt_context_hit_color="@color/red"/>
+                        app:wt_context_hit_color="@color/red"
+                        app:wt_title="充值金额"/>
                 </LinearLayout>
             </ScrollView>
 

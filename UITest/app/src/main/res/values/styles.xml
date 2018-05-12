@@ -8,4 +8,31 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--标题（黑色）+内容（蓝色）+提示hit（灰色）-->
+    <style name="wt_normal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--标题（黑色）+内容（蓝色）+提示hit（灰色）+箭头-->
+    <style name="wt_arrow" parent="wt_normal">
+        <item name="wt_arrow_visible">true</item>
+    </style>
+    <!--标题（黑色、加粗）+内容（蓝色）+提示hit（灰色）-->
+    <style name="wt_bold" parent="wt_normal">
+        <item name="wt_title_style">true</item>
+    </style>
+    <!--标题（黑色、加粗）+内容（蓝色）+提示hit（灰色）+箭头-->
+    <style name="wt_bold_arrow" parent="wt_normal">
+        <item name="wt_arrow_visible">true</item>
+        <item name="wt_title_style">true</item>
+    </style>
+    <!--标题（黑色）+内容（蓝色）+提示hit（红色）-->
+    <style name="wt_red" parent="wt_normal">
+        <item name="wt_context_hit_color">@color/red</item>
+    </style>
+    <!--标题（黑色）+内容（蓝色）+提示hit（红色）+箭头-->
+    <style name="wt_red_arrow" parent="wt_normal">
+        <item name="wt_arrow_visible">true</item>
+        <item name="wt_context_hit_color">@color/red</item>
+    </style>
 </resources>

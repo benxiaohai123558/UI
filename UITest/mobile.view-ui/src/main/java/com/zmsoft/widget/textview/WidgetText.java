@@ -14,6 +14,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.zmsoft.ui.R;
+import com.zmsoft.widget.listener.IWidgetClickBack;
+import com.zmsoft.widget.listener.IWidgetClickListener;
 
 import static android.util.TypedValue.COMPLEX_UNIT_PX;
 
@@ -33,6 +35,12 @@ public class WidgetText extends LinearLayout {
     private TextView titleTv, contextTv;//标题，类容
 
     private ImageView deleteImg, arrowImg;//删除图片，向右箭头
+
+    private IWidgetClickListener clickListener;//点击事件
+
+    private IWidgetClickBack deleteClickBack;//删除事件
+
+    private int type;
 
     public WidgetText(Context context) {
         super(context);
@@ -65,6 +73,26 @@ public class WidgetText extends LinearLayout {
         this.contextTv = (TextView) view.findViewById(R.id.txt_context);
         this.deleteImg = (ImageView) view.findViewById(R.id.img_delete);
         this.arrowImg = (ImageView) view.findViewById(R.id.img_arrow);
+        this.initButton();
+    }
+
+    private void initButton() {
+        this.bgLayout.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (clickListener != null) {
+                    clickListener.onWidgetClick(v);
+                }
+            }
+        });
+        this.deleteImg.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (deleteClickBack != null) {
+                    deleteClickBack.onWidgetBack(type, v);
+                }
+            }
+        });
     }
 
     private void readStyleParameters(Context context, AttributeSet attrs) {
@@ -137,6 +165,15 @@ public class WidgetText extends LinearLayout {
             }
             ta.recycle();
         }
+    }
+
+    public void setClickListener(IWidgetClickListener clickListener) {
+        this.clickListener = clickListener;
+    }
+
+    public void setDeleteClickBack(IWidgetClickBack deleteClickBack, int type) {
+        this.deleteClickBack = deleteClickBack;
+        this.type = type;
     }
 
     /**
@@ -269,4 +306,5 @@ public class WidgetText extends LinearLayout {
     public void setContextHitColor(int color) {
         this.contextTv.setHintTextColor(color);
     }
+
 }
