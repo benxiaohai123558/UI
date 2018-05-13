@@ -100,59 +100,59 @@ public class WidgetText extends LinearLayout {
             TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.WidgetText);
             for (int i = 0; i < ta.getIndexCount(); i++) {
                 int attr = ta.getIndex(i);
-                if (attr == R.styleable.WidgetText_wt_title) {
+                if (attr == R.styleable.WidgetText_wt_title) {//标题内容
                     titleTv.setText(ta.getString(attr));
-                } else if (attr == R.styleable.WidgetText_wt_title_color) {
+                } else if (attr == R.styleable.WidgetText_wt_title_color) {//标题字体颜色
                     ColorStateList titleColor = ta.getColorStateList(attr);
                     titleTv.setTextColor(titleColor != null ? titleColor : ColorStateList.valueOf(0X000000));
-                } else if (attr == R.styleable.WidgetText_wt_title_size) {
+                } else if (attr == R.styleable.WidgetText_wt_title_size) {//标题字体大小
                     float textSize = ta.getDimension(attr, -1);
-                    if (textSize != -1) {
+                    if (textSize > 0) {
                         titleTv.setTextSize(COMPLEX_UNIT_PX, textSize);//收银字体大小使用的px，所以转换的时候需要制定规则，否则会按sp转换
                     }
-                } else if (attr == R.styleable.WidgetText_wt_title_style) {
+                } else if (attr == R.styleable.WidgetText_wt_title_style) {//标题字体是否加粗
                     boolean visibile = ta.getBoolean(attr, false);
                     TextPaint tp = titleTv.getPaint();
                     tp.setFakeBoldText(visibile);
-                } else if (attr == R.styleable.WidgetText_wt_context) {
+                } else if (attr == R.styleable.WidgetText_wt_context) {//内容
                     contextTv.setText(ta.getString(attr));
-                } else if (attr == R.styleable.WidgetText_wt_context_color) {
+                } else if (attr == R.styleable.WidgetText_wt_context_color) {//内容字体颜色
                     ColorStateList titleColor = ta.getColorStateList(attr);
                     contextTv.setTextColor(titleColor != null ? titleColor : ColorStateList.valueOf(0X0066AA));
-                } else if (attr == R.styleable.WidgetText_wt_context_size) {
+                } else if (attr == R.styleable.WidgetText_wt_context_size) {//内容字体大小
                     float textSize = ta.getDimension(attr, -1);
-                    if (textSize != -1) {
+                    if (textSize > 0) {
                         contextTv.setTextSize(COMPLEX_UNIT_PX, textSize);
                     }
-                } else if (attr == R.styleable.WidgetText_wt_context_hit) {
+                } else if (attr == R.styleable.WidgetText_wt_context_hit) {//提示内容
                     contextTv.setHint(ta.getString(attr));
-                } else if (attr == R.styleable.WidgetText_wt_context_hit_color) {
+                } else if (attr == R.styleable.WidgetText_wt_context_hit_color) {//提示内容字体颜色
                     ColorStateList titleColor = ta.getColorStateList(attr);
                     contextTv.setHintTextColor(titleColor != null ? titleColor : ColorStateList.valueOf(0X666666));
-                } else if (attr == R.styleable.WidgetText_wt_delete_src) {
+                } else if (attr == R.styleable.WidgetText_wt_delete_src) {//删除按钮样式
                     Drawable deleteDraw = ta.getDrawable(attr);
                     if (deleteDraw != null) {
                         deleteImg.setImageDrawable(deleteDraw);
                     }
-                } else if (attr == R.styleable.WidgetText_wt_delete_visible) {
+                } else if (attr == R.styleable.WidgetText_wt_delete_visible) {//是否显示删除按钮
                     boolean visibile = ta.getBoolean(attr, false);
                     this.showDeleteImg(visibile);
-                } else if (attr == R.styleable.WidgetText_wt_arrow_src) {
+                } else if (attr == R.styleable.WidgetText_wt_arrow_src) {//向右箭头样式
                     Drawable arrowDraw = ta.getDrawable(attr);
                     if (arrowDraw != null) {
                         arrowImg.setImageDrawable(arrowDraw);
                     }
-                } else if (attr == R.styleable.WidgetText_wt_arrow_visible) {
+                } else if (attr == R.styleable.WidgetText_wt_arrow_visible) {//是否显示箭头
                     boolean visibile = ta.getBoolean(attr, false);
                     if (visibile) {
                         arrowImg.setVisibility(View.VISIBLE);
                     } else {
                         arrowImg.setVisibility(View.GONE);
                     }
-                } else if (attr == R.styleable.WidgetText_wt_is_selector) {
+                } else if (attr == R.styleable.WidgetText_wt_is_selector) {//是否显示选中效果
                     boolean isSelector = ta.getBoolean(attr, false);
                     this.showSelector(isSelector);
-                } else if (attr == R.styleable.WidgetText_wt_selector_bg) {
+                } else if (attr == R.styleable.WidgetText_wt_selector_bg) {//选中效果样式
                     Drawable arrowDraw = ta.getDrawable(attr);
                     if (arrowDraw != null) {
                         bgLayout.setBackgroundDrawable(arrowDraw);

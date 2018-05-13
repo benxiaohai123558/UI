@@ -99,6 +99,7 @@
                         style="@style/wt_normal"
                         app:wt_context="本店会员"
                         app:wt_title="发卡机构" />
+
                     <com.zmsoft.ui.WidgetText
                         style="@style/wt_arrow_delete"
                         app:wt_context="本店会员"
@@ -119,6 +120,19 @@
                         app:wt_context_hit="必填"
                         app:wt_title="充值金额" />
 
+                    <com.zmsoft.ui.WidgetSwich
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:ws_context="为防止无操作，建议打开此开关，但是如果生意繁忙，可关闭次开关提高效率"
+                        app:ws_context_color="@color/red"
+                        app:ws_context_paddingleft="@dimen/px10"
+                        app:ws_context_size="@dimen/px10"
+                        app:ws_context_visible="true"
+                        app:ws_swich_visible="true"
+                        app:ws_title="确认点菜完毕单出二次确认框"
+                        app:ws_title_color="@color/red"
+                        app:ws_title_size="@dimen/px20"
+                        app:ws_title_style="true" />
                 </LinearLayout>
             </ScrollView>
 

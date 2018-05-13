@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Start WidgetText theme-->
     <!--标题（黑色）+内容（蓝色）+提示hit（灰色）-->
     <style name="wt_normal">
         <item name="android:layout_width">wrap_content</item>
@@ -41,4 +42,6 @@
         <item name="wt_arrow_visible">true</item>
         <item name="wt_context_hit_color">@color/red</item>
     </style>
+    <!-- end WidgetText theme-->
+    
 </resources>
