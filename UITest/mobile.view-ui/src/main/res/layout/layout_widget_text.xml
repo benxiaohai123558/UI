@@ -1,13 +1,13 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:id="@+id/layout"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:orientation="vertical">
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:minHeight="@dimen/px44"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <TextView
@@ -19,7 +19,7 @@
             android:ellipsize="end"
             android:gravity="center_vertical"
             android:maxLines="2"
-            android:text=""/>
+            android:text="" />
 
         <TextView
             android:id="@+id/txt_context"
@@ -32,32 +32,31 @@
             android:gravity="center_vertical|right"
             android:maxLines="2"
             android:text=""
-            android:textColorHint="@color/medium_gray"/>
+            android:textColorHint="@color/medium_gray" />
 
         <ImageView
             android:id="@+id/img_delete"
             android:layout_width="@dimen/px44"
             android:layout_height="@dimen/px44"
-            android:layout_gravity="center_vertical"
+
             android:src="@drawable/linkicon_del"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
         <ImageView
             android:id="@+id/img_arrow"
             style="@style/black_medium"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/px16"
+            android:layout_height="@dimen/px16"
             android:layout_marginRight="@dimen/px6"
             android:src="@drawable/icon_arrow_left"
-            android:visibility="gone"
-            android:text=""/>
+            android:text=""
+            android:visibility="gone" />
 
     </LinearLayout>
 
     <ImageView
         style="@style/bg_line"
         android:layout_width="match_parent"
-        android:layout_gravity="bottom"/>
+        android:layout_gravity="bottom" />
 
 </FrameLayout>

@@ -184,7 +184,7 @@
 
 
     <!--WightText-->
-    <declare-styleable name="WightText">
+    <declare-styleable name="WidgetText">
         <!--标题-->
         <attr name="wt_title" format="string|reference"/>
         <attr name="wt_title_color" format="color|reference"/>
@@ -196,10 +196,10 @@
         <attr name="wt_context_size" format="dimension"/>
         <attr name="wt_context_hit" format="string|reference"/>
         <attr name="wt_context_hit_color" format="color|reference"/>
-        <!--箭头-->
+        <!--删除按钮-->
         <attr name="wt_delete_src" format="reference"/>
         <attr name="wt_delete_visible" format="boolean"/>
-        <!--删除按钮-->
+        <!--箭头-->
         <attr name="wt_arrow_src" format="reference"/>
         <attr name="wt_arrow_visible" format="boolean"/>
         <!--是否显示选中效果-->

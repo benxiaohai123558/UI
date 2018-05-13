@@ -1,4 +1,4 @@
-package com.zmsoft.widget.textview;
+package com.zmsoft.ui;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -13,7 +13,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.zmsoft.ui.R;
 import com.zmsoft.widget.listener.IWidgetClickBack;
 import com.zmsoft.widget.listener.IWidgetClickListener;
 
@@ -24,7 +23,6 @@ import static android.util.TypedValue.COMPLEX_UNIT_PX;
  * time  : 2018/5/9.
  * desc  : 自定义控件
  */
-
 
 public class WidgetText extends LinearLayout {
 
@@ -81,15 +79,17 @@ public class WidgetText extends LinearLayout {
             @Override
             public void onClick(View v) {
                 if (clickListener != null) {
-                    clickListener.onWidgetClick(v);
+                    clickListener.onWidgetClick(WidgetText.this);
                 }
             }
         });
         this.deleteImg.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
+                contextTv.setText(null);
+                showDeleteImg(false);
                 if (deleteClickBack != null) {
-                    deleteClickBack.onWidgetBack(type, v);
+                    deleteClickBack.onWidgetBack(type, WidgetText.this);
                 }
             }
         });
@@ -97,66 +97,62 @@ public class WidgetText extends LinearLayout {
 
     private void readStyleParameters(Context context, AttributeSet attrs) {
         if (attrs != null) {
-            TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.WightText);
+            TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.WidgetText);
             for (int i = 0; i < ta.getIndexCount(); i++) {
                 int attr = ta.getIndex(i);
-                if (attr == R.styleable.WightText_wt_title) {
+                if (attr == R.styleable.WidgetText_wt_title) {
                     titleTv.setText(ta.getString(attr));
-                } else if (attr == R.styleable.WightText_wt_title_color) {
+                } else if (attr == R.styleable.WidgetText_wt_title_color) {
                     ColorStateList titleColor = ta.getColorStateList(attr);
                     titleTv.setTextColor(titleColor != null ? titleColor : ColorStateList.valueOf(0X000000));
-                } else if (attr == R.styleable.WightText_wt_title_size) {
+                } else if (attr == R.styleable.WidgetText_wt_title_size) {
                     float textSize = ta.getDimension(attr, -1);
                     if (textSize != -1) {
                         titleTv.setTextSize(COMPLEX_UNIT_PX, textSize);//收银字体大小使用的px，所以转换的时候需要制定规则，否则会按sp转换
                     }
-                } else if (attr == R.styleable.WightText_wt_title_style) {
+                } else if (attr == R.styleable.WidgetText_wt_title_style) {
                     boolean visibile = ta.getBoolean(attr, false);
                     TextPaint tp = titleTv.getPaint();
                     tp.setFakeBoldText(visibile);
-                } else if (attr == R.styleable.WightText_wt_context) {
+                } else if (attr == R.styleable.WidgetText_wt_context) {
                     contextTv.setText(ta.getString(attr));
-                } else if (attr == R.styleable.WightText_wt_context_color) {
+                } else if (attr == R.styleable.WidgetText_wt_context_color) {
                     ColorStateList titleColor = ta.getColorStateList(attr);
                     contextTv.setTextColor(titleColor != null ? titleColor : ColorStateList.valueOf(0X0066AA));
-                } else if (attr == R.styleable.WightText_wt_context_size) {
+                } else if (attr == R.styleable.WidgetText_wt_context_size) {
                     float textSize = ta.getDimension(attr, -1);
                     if (textSize != -1) {
                         contextTv.setTextSize(COMPLEX_UNIT_PX, textSize);
                     }
-                } else if (attr == R.styleable.WightText_wt_context_hit) {
+                } else if (attr == R.styleable.WidgetText_wt_context_hit) {
                     contextTv.setHint(ta.getString(attr));
-                } else if (attr == R.styleable.WightText_wt_context_hit_color) {
+                } else if (attr == R.styleable.WidgetText_wt_context_hit_color) {
                     ColorStateList titleColor = ta.getColorStateList(attr);
                     contextTv.setHintTextColor(titleColor != null ? titleColor : ColorStateList.valueOf(0X666666));
-                } else if (attr == R.styleable.WightText_wt_delete_src) {
+                } else if (attr == R.styleable.WidgetText_wt_delete_src) {
                     Drawable deleteDraw = ta.getDrawable(attr);
                     if (deleteDraw != null) {
                         deleteImg.setImageDrawable(deleteDraw);
                     }
-                } else if (attr == R.styleable.WightText_wt_delete_visible) {
+                } else if (attr == R.styleable.WidgetText_wt_delete_visible) {
                     boolean visibile = ta.getBoolean(attr, false);
-                    if (visibile) {
-                        deleteImg.setVisibility(View.VISIBLE);
-                    } else {
-                        deleteImg.setVisibility(View.GONE);
-                    }
-                } else if (attr == R.styleable.WightText_wt_arrow_src) {
+                    this.showDeleteImg(visibile);
+                } else if (attr == R.styleable.WidgetText_wt_arrow_src) {
                     Drawable arrowDraw = ta.getDrawable(attr);
                     if (arrowDraw != null) {
                         arrowImg.setImageDrawable(arrowDraw);
                     }
-                } else if (attr == R.styleable.WightText_wt_arrow_visible) {
+                } else if (attr == R.styleable.WidgetText_wt_arrow_visible) {
                     boolean visibile = ta.getBoolean(attr, false);
                     if (visibile) {
                         arrowImg.setVisibility(View.VISIBLE);
                     } else {
                         arrowImg.setVisibility(View.GONE);
                     }
-                } else if (attr == R.styleable.WightText_wt_is_selector) {
+                } else if (attr == R.styleable.WidgetText_wt_is_selector) {
                     boolean isSelector = ta.getBoolean(attr, false);
-                    this.isShowSelector(isSelector);
-                } else if (attr == R.styleable.WightText_wt_selector_bg) {
+                    this.showSelector(isSelector);
+                } else if (attr == R.styleable.WidgetText_wt_selector_bg) {
                     Drawable arrowDraw = ta.getDrawable(attr);
                     if (arrowDraw != null) {
                         bgLayout.setBackgroundDrawable(arrowDraw);
@@ -167,7 +163,7 @@ public class WidgetText extends LinearLayout {
         }
     }
 
-    public void setClickListener(IWidgetClickListener clickListener) {
+    public void setWidgetClickListener(IWidgetClickListener clickListener) {
         this.clickListener = clickListener;
     }
 
@@ -190,7 +186,7 @@ public class WidgetText extends LinearLayout {
      *
      * @param isSelector true显示，false不显示
      */
-    public void isShowSelector(boolean isSelector) {
+    public void showSelector(boolean isSelector) {
         if (isSelector) {
             bgLayout.setBackgroundColor(context.getResources().getColor(R.color.form_selected));
         } else {
@@ -214,6 +210,15 @@ public class WidgetText extends LinearLayout {
      */
     public void setTitleValue(String value) {
         this.titleTv.setText(value);
+    }
+
+    /**
+     * 获取标题值
+     *
+     * @return
+     */
+    public String getTitleValue() {
+        return titleTv.getText().toString().trim();
     }
 
     /**
@@ -263,6 +268,15 @@ public class WidgetText extends LinearLayout {
     }
 
     /**
+     * 获取内容
+     *
+     * @return
+     */
+    public String getContextValue() {
+        return this.contextTv.getText().toString().trim();
+    }
+
+    /**
      * 设置内容字体颜色
      *
      * @param color
@@ -305,6 +319,19 @@ public class WidgetText extends LinearLayout {
      */
     public void setContextHitColor(int color) {
         this.contextTv.setHintTextColor(color);
+    }
+
+    /**
+     * 是否显示删除按钮
+     *
+     * @param isVisibility
+     */
+    public void showDeleteImg(boolean isVisibility) {
+        if (isVisibility) {
+            deleteImg.setVisibility(View.VISIBLE);
+        } else {
+            deleteImg.setVisibility(View.GONE);
+        }
     }
 
 }
