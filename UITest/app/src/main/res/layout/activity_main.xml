@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="fill_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:visibility="visible">
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:visibility="visible">
 
     <FrameLayout
         android:layout_width="@dimen/left_view_width"
@@ -15,35 +15,35 @@
             android:layout_height="fill_parent"
             android:layout_marginBottom="@dimen/px4"
             android:layout_marginTop="@dimen/px4"
-            android:background="@drawable/panel_black_40" />
+            android:background="@drawable/panel_black_40"/>
 
         <View
             android:layout_width="@dimen/left_view_width1"
             android:layout_height="@dimen/px680"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/px24"
-            android:background="@drawable/white_background" />
+            android:background="@drawable/white_background"/>
 
         <View
             android:layout_width="@dimen/left_view_width2"
             android:layout_height="@dimen/px2"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/px704"
-            android:background="@color/white_6alpha" />
+            android:background="@color/white_6alpha"/>
 
         <View
             android:layout_width="@dimen/left_view_width3"
             android:layout_height="@dimen/px2"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/px706"
-            android:background="@color/white_4alpha" />
+            android:background="@color/white_4alpha"/>
 
         <View
             android:layout_width="@dimen/px200"
             android:layout_height="@dimen/px44"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/px4"
-            android:background="@drawable/img_paperclip" />
+            android:background="@drawable/img_paperclip"/>
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -57,12 +57,12 @@
                 android:layout_height="@dimen/px30"
                 android:layout_marginTop="@dimen/px45"
                 android:gravity="center"
-                android:text="set_more" />
+                android:text="set_more"/>
 
             <ImageView
                 android:layout_width="@dimen/px300"
                 android:layout_height="@dimen/px2"
-                android:background="@color/solid_separate" />
+                android:background="@color/solid_separate"/>
 
             <ScrollView
                 android:layout_width="@dimen/px300"
@@ -87,60 +87,224 @@
                         app:wt_title="@string/app_name"
                         app:wt_title_color="#0066AA"
                         app:wt_title_size="@dimen/medium"
-                        app:wt_title_style="true" />
+                        app:wt_title_style="true"/>
 
                     <com.zmsoft.ui.WidgetText
                         android:id="@+id/wt1"
                         style="@style/wt_arrow"
-                        app:wt_title="商业模式" />
+                        app:wt_title="商业模式"/>
 
                     <com.zmsoft.ui.WidgetText
                         android:id="@+id/wt2"
                         style="@style/wt_normal"
                         app:wt_context="本店会员"
-                        app:wt_title="发卡机构" />
+                        app:wt_title="发卡机构"/>
 
                     <com.zmsoft.ui.WidgetText
                         style="@style/wt_arrow_delete"
                         app:wt_context="本店会员"
-                        app:wt_title="发卡机构" />
+                        app:wt_title="发卡机构"/>
 
                     <com.zmsoft.ui.WidgetText
                         style="@style/wt_bold"
                         app:wt_context="优惠规则？"
-                        app:wt_title="充值优惠" />
+                        app:wt_title="充值优惠"/>
 
                     <com.zmsoft.ui.WidgetText
                         style="@style/wt_arrow"
                         app:wt_context_hit="可不填"
-                        app:wt_title="绑定手机号" />
+                        app:wt_title="绑定手机号"/>
 
                     <com.zmsoft.ui.WidgetText
                         style="@style/wt_red"
                         app:wt_context_hit="必填"
-                        app:wt_title="充值金额" />
+                        app:wt_title="充值金额"/>
 
                     <com.zmsoft.ui.WidgetSwich
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:ws_context="为防止无操作，建议打开此开关，但是如果生意繁忙，可关闭次开关提高效率"
-                        app:ws_context_color="@color/red"
-                        app:ws_context_paddingleft="@dimen/px10"
-                        app:ws_context_size="@dimen/px10"
-                        app:ws_context_visible="true"
-                        app:ws_swich_visible="true"
-                        app:ws_title="确认点菜完毕单出二次确认框"
-                        app:ws_title_color="@color/red"
-                        app:ws_title_size="@dimen/px20"
-                        app:ws_title_style="true" />
+                        style="@style/ws_normal"
+                        app:ws_title="确认点菜完毕单出二次确认框"/>
+
                 </LinearLayout>
             </ScrollView>
 
             <ImageView
                 android:layout_width="@dimen/px300"
                 android:layout_height="@dimen/px2"
-                android:background="@color/solid_separate" />
+                android:background="@color/solid_separate"/>
         </LinearLayout>
     </FrameLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/px50">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/btn_oval_confirm"/>
+
+                <Button
+                    style="@style/btn_oval_cancel"/>
+
+                <Button
+                    style="@style/btn_oval_delete"/>
+
+                <Button
+                    style="@style/btn_oval_close"/>
+
+                <Button
+                    style="@style/btn_oval_refresh"/>
+
+                <Button
+                    style="@style/btn_oval_clear"/>
+
+                <Button
+                    style="@style/btn_oval_print"/>
+
+                <Button
+                    style="@style/btn_oval_setting"/>
+
+                <Button
+                    style="@style/btn_oval_search"/>
+
+                <Button
+                    style="@style/btn_oval_back"/>
+
+                <Button
+                    style="@style/btn_oval_add"/>
+
+                <Button
+                    style="@style/btn_oval_modify"/>
+
+                <Button
+                    style="@style/btn_oval_approve"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/btn_oval_page_next"/>
+
+                <Button
+                    style="@style/btn_oval_page_prev"/>
+
+                <Button
+                    style="@style/btn_oval_confirm_order"/>
+
+                <Button
+                    style="@style/btn_oval_open_order"/>
+
+                <Button
+                    style="@style/btn_oval_edit_order"/>
+
+                <Button
+                    style="@style/btn_oval_urge_order"/>
+
+                <Button
+                    style="@style/btn_oval_delete_order"/>
+
+                <Button
+                    style="@style/btn_oval_arrive"/>
+
+                <Button
+                    style="@style/btn_oval_end_order"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black_2alpha"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/px10"
+                android:paddingTop="@dimen/px10">
+
+                <Button
+                    style="@style/btn_oval_back_white"/>
+
+                <Button
+                    style="@style/btn_oval_page_prev_white"/>
+
+                <Button
+                    style="@style/btn_oval_page_next_white"/>
+
+                <Button
+                    style="@style/btn_oval_delete_order_white"/>
+
+                <Button
+                    style="@style/btn_oval_menu_order_white"/>
+
+                <Button
+                    style="@style/btn_oval_arrange_seat_white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.zmsoft.ui.WidgetSwich
+                    android:id="@+id/ws1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:ws_context="为防止无操作，建议打开此开关，但是如果生意繁忙，可关闭次开关提高效率"
+                    app:ws_context_color="@color/red"
+                    app:ws_context_paddingleft="@dimen/px10"
+                    app:ws_context_size="@dimen/px10"
+                    app:ws_context_visible="true"
+                    app:ws_swich_toggle="false"
+                    app:ws_swich_visible="true"
+                    app:ws_title="确认点菜完毕单出二次确认框"
+                    app:ws_title_color="@color/red"
+                    app:ws_title_size="@dimen/px20"
+                    app:ws_title_style="true"/>
+
+                <com.zmsoft.ui.WidgetSwich
+                    android:id="@+id/ws2"
+                    style="@style/ws_normal"
+                    app:ws_title="开关样式1(点击自动切换样式)"/>
+
+                <com.zmsoft.ui.WidgetSwich
+                    style="@style/ws_normal_off"
+                    app:ws_title="开关样式2(点击不自动切换样式)"/>
+
+                <com.zmsoft.ui.WidgetSwich
+                    style="@style/ws_context"
+                    app:ws_context="提示内容"
+                    app:ws_title="开关样式3"/>
+
+                <com.zmsoft.ui.WidgetSwich
+                    style="@style/ws_context_paddingleft"
+                    app:ws_context="提示内容前面进行缩进"
+                    app:ws_title="开关样式4"/>
+
+                <com.zmsoft.ui.WidgetSwich
+                    style="@style/ws_context_toggle"
+                    app:ws_context="点击时候自动切换开关样式"
+                    app:ws_title="开关样式5"/>
+
+                <com.zmsoft.ui.WidgetSwich
+                    style="@style/ws_context_toggle_off"
+                    app:ws_context="点击的时候不会自动切换开关样式，试用于需要先调用网络接口成功之后再修改开关值"
+                    app:ws_title="开关样式6"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

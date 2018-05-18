@@ -65,4 +65,10 @@
 
     <color name="form_selected">#1A000000</color>
 
+    <color name="img_blue">#0066aa</color>
+    <color name="img_red">#aa0000</color>
+    <color name="img_green">#008800</color>
+    <color name="img_orange">#aa6600</color>
+    <color name="img_orange_9alpha">#e5cc8800</color>
+    <color name="green_9alpha">#e500aa22</color>
 </resources>

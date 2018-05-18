@@ -1,0 +1,195 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ############################ 圆形 Button theme ############################ -->
+
+    <style name="btn_oval_black_base" parent="black_medium">
+        <item name="android:layout_width">@dimen/px70</item>
+        <item name="android:layout_height">@dimen/px70</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/px10</item>
+        <item name="android:drawablePadding">@dimen/px8</item>
+    </style>
+
+    <style name="btn_oval_white_base" parent="white_medium">
+        <item name="android:layout_width">@dimen/px70</item>
+        <item name="android:layout_height">@dimen/px70</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/px10</item>
+        <item name="android:drawablePadding">@dimen/px8</item>
+    </style>
+    <!--白色字体+红色背景-->
+    <style name="btn_oval_white_red" parent="btn_oval_white_base">
+        <item name="android:background">@drawable/btn_oval_red</item>
+    </style>
+    <!--黑色字体+红色背景-->
+    <style name="btn_oval_black_red" parent="btn_oval_black_base">
+        <item name="android:background">@drawable/btn_oval_red</item>
+    </style>
+    <!--白色字体+蓝色背景-->
+    <style name="btn_oval_white_blue" parent="btn_oval_white_base">
+        <item name="android:background">@drawable/btn_oval_blue</item>
+    </style>
+    <!--黑色字体+蓝色背景-->
+    <style name="btn_oval_black_blue" parent="btn_oval_black_base">
+        <item name="android:background">@drawable/btn_oval_blue</item>
+    </style>
+    <!--白色字体+绿色背景-->
+    <style name="btn_oval_white_green" parent="btn_oval_white_base">
+        <item name="android:background">@drawable/btn_oval_green</item>
+    </style>
+    <!--黑色字体+绿色背景-->
+    <style name="btn_oval_black_green" parent="btn_oval_black_base">
+        <item name="android:background">@drawable/btn_oval_green</item>
+    </style>
+    <!--白色字体+绿色背景-->
+    <style name="btn_oval_white_orange" parent="btn_oval_white_base">
+        <item name="android:background">@drawable/btn_oval_orange</item>
+    </style>
+    <!--黑色字体+绿色背景-->
+    <style name="btn_oval_black_orange" parent="btn_oval_black_base">
+        <item name="android:background">@drawable/btn_oval_orange</item>
+    </style>
+
+    <!-- ############################ 公用 Button theme ############################ -->
+    <!--取消-->
+    <style name="btn_oval_cancel" parent="btn_oval_black_red">
+        <item name="android:text">@string/cancel</item>
+        <item name="android:drawableTop">@drawable/btnicon_cancel</item>
+    </style>
+    <!--确定-->
+    <style name="btn_oval_confirm" parent="btn_oval_black_blue">
+        <item name="android:text">@string/confirm</item>
+        <item name="android:drawableTop">@drawable/btnicon_check</item>
+    </style>
+    <!--删除-->
+    <style name="btn_oval_delete" parent="btn_oval_black_red">
+        <item name="android:text">@string/delete</item>
+        <item name="android:drawableTop">@drawable/btnicon_del</item>
+    </style>
+    <!--关闭-->
+    <style name="btn_oval_close" parent="btn_oval_black_red">
+        <item name="android:text">@string/close</item>
+        <item name="android:drawableTop">@drawable/btnicon_cancel</item>
+    </style>
+    <!--刷新-->
+    <style name="btn_oval_refresh" parent="btn_oval_black_red">
+        <item name="android:text">@string/refresh</item>
+        <item name="android:drawableTop">@drawable/btnicon_refresh</item>
+    </style>
+    <!--清空-->
+    <style name="btn_oval_clear" parent="btn_oval_black_red">
+        <item name="android:text">@string/dialog_btn_clear</item>
+        <item name="android:drawableTop">@drawable/btnicon_del</item>
+    </style>
+    <!--打印-->
+    <style name="btn_oval_print" parent="btn_oval_black_red">
+        <item name="android:text">@string/shift_print</item>
+        <item name="android:drawableTop">@drawable/btnicon_printer</item>
+    </style>
+    <!--设置-->
+    <style name="btn_oval_setting" parent="btn_oval_black_red">
+        <item name="android:text">@string/cloud_task_setting</item>
+        <item name="android:drawableTop">@drawable/btnicon_setting</item>
+    </style>
+    <!--搜索-->
+    <style name="btn_oval_search" parent="btn_oval_black_red">
+        <item name="android:text">@string/search</item>
+        <item name="android:drawableTop">@drawable/btnicon_search</item>
+    </style>
+    <!--返回-->
+    <style name="btn_oval_back" parent="btn_oval_black_red">
+        <item name="android:text">@string/go_back</item>
+        <item name="android:drawableTop">@drawable/btnicon_return</item>
+    </style>
+    <!--返回白色字体-->
+    <style name="btn_oval_back_white" parent="btn_oval_white_red">
+        <item name="android:text">@string/go_back</item>
+        <item name="android:drawableTop">@drawable/btnicon_return</item>
+    </style>
+    <!--新增-->
+    <style name="btn_oval_add" parent="btn_oval_black_green">
+        <item name="android:text">@string/takeout_new</item>
+        <item name="android:drawableTop">@drawable/btnicon_add</item>
+    </style>
+    <!--修改-->
+    <style name="btn_oval_modify" parent="btn_oval_black_red">
+        <item name="android:text">@string/modify</item>
+        <item name="android:drawableTop">@drawable/btnicon_edit</item>
+    </style>
+    <!--同意-->
+    <style name="btn_oval_approve" parent="btn_oval_black_blue">
+        <item name="android:text">@string/takeout_approve</item>
+        <item name="android:drawableTop">@drawable/btnicon_check</item>
+    </style>
+    <!--下一页-->
+    <style name="btn_oval_page_next" parent="btn_oval_black_blue">
+        <item name="android:text">@string/next_page</item>
+        <item name="android:drawableTop">@drawable/btnicon_pagergt</item>
+    </style>
+    <!--下一页 白色字体-->
+    <style name="btn_oval_page_next_white" parent="btn_oval_white_blue">
+        <item name="android:text">@string/next_page</item>
+        <item name="android:drawableTop">@drawable/btnicon_pagergt</item>
+    </style>
+    <!--上一页-->
+    <style name="btn_oval_page_prev" parent="btn_oval_black_blue">
+        <item name="android:text">@string/prev_page</item>
+        <item name="android:drawableTop">@drawable/btnicon_pagelft</item>
+    </style>
+    <!--上一页 白色字体-->
+    <style name="btn_oval_page_prev_white" parent="btn_oval_white_blue">
+        <item name="android:text">@string/prev_page</item>
+        <item name="android:drawableTop">@drawable/btnicon_pagelft</item>
+    </style>
+    <!-- ############################ 订单相关 Button theme ############################ -->
+    <!--下单-->
+    <style name="btn_oval_confirm_order" parent="btn_oval_black_blue">
+        <item name="android:text">@string/confirm_order</item>
+        <item name="android:drawableTop">@drawable/btnicon_check</item>
+    </style>
+    <!--开单-->
+    <style name="btn_oval_open_order" parent="btn_oval_black_green">
+        <item name="android:text">@string/new_order</item>
+        <item name="android:drawableTop">@drawable/btnicon_add</item>
+    </style>
+    <!--改单-->
+    <style name="btn_oval_edit_order" parent="btn_oval_black_red">
+        <item name="android:text">@string/edit_order</item>
+        <item name="android:drawableTop">@drawable/btnicon_edit</item>
+    </style>
+    <!--催单-->
+    <style name="btn_oval_urge_order" parent="btn_oval_black_red">
+        <item name="android:text">@string/urge_order</item>
+        <item name="android:drawableTop">@drawable/btnicon_hurry</item>
+    </style>
+    <!--撤单-->
+    <style name="btn_oval_delete_order" parent="btn_oval_black_red">
+        <item name="android:text">@string/takeout_cancel_order</item>
+        <item name="android:drawableTop">@drawable/btnicon_del</item>
+    </style>
+    <!--撤单-->
+    <style name="btn_oval_delete_order_white" parent="btn_oval_white_red">
+        <item name="android:text">@string/takeout_cancel_order</item>
+        <item name="android:drawableTop">@drawable/btnicon_del</item>
+    </style>
+    <!--点菜-->
+    <style name="btn_oval_menu_order_white" parent="btn_oval_white_red">
+        <item name="android:text">@string/order_menu</item>
+        <item name="android:drawableTop">@drawable/btnicon_menu</item>
+    </style>
+    <!--排桌-->
+    <style name="btn_oval_arrange_seat_white" parent="btn_oval_white_red">
+        <item name="android:text">@string/reserve_arrange_seat</item>
+        <item name="android:drawableTop">@drawable/btnicon_table</item>
+    </style>
+    <!--到达-->
+    <style name="btn_oval_arrive" parent="btn_oval_black_blue">
+        <item name="android:text">@string/reserve_arrive</item>
+        <item name="android:drawableTop">@drawable/btnicon_check</item>
+    </style>
+    <!--结账-->
+    <style name="btn_oval_end_order" parent="btn_oval_black_red">
+        <item name="android:text">@string/takeout_check_out</item>
+        <item name="android:drawableTop">@drawable/btnicon_charge</item>
+    </style>
+</resources>

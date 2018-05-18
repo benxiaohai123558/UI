@@ -10,10 +10,8 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
-import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.ToggleButton;
 
 import com.zmsoft.widget.listener.IWidgetClickListener;
 
@@ -45,6 +43,8 @@ public class WidgetSwich extends LinearLayout {
 
     private IWidgetClickListener clickListener;//点击事件
 
+    private boolean isToggle = true;
+
     public WidgetSwich(Context context) {
         super(context);
         this.initView(context);
@@ -75,18 +75,31 @@ public class WidgetSwich extends LinearLayout {
         this.contextTv = (TextView) view.findViewById(R.id.txt_context);
         this.toggleBtn = (Button) view.findViewById(R.id.btn_toggle);
         setSwitchValue(false);
+        this.initButton(view);
+    }
+
+    private void initButton(View view) {
         view.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Short value = getSwitchValue();
-                if (value == TRUE) {
-                    value = FALSE;
-                } else {
-                    value = TRUE;
-                }
-                setSwitchValue(value);
+                onClickToggle();
             }
         });
+        toggleBtn.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onClickToggle();
+            }
+        });
+    }
+
+    private void onClickToggle() {
+        if (isToggle) {
+            switchOnClick();
+        }
+        if (clickListener != null) {
+            clickListener.onWidgetClick(WidgetSwich.this);
+        }
     }
 
     private void readStyleParameters(Context context, AttributeSet attrs) {
@@ -137,6 +150,8 @@ public class WidgetSwich extends LinearLayout {
                 } else if (attr == R.styleable.WidgetSwich_ws_swich_visible) {//是否显示开关
                     boolean visibile = ta.getBoolean(attr, false);
                     this.showToggleBtn(visibile);
+                } else if (attr == R.styleable.WidgetSwich_ws_swich_toggle) {//点击时，是否切换开关样式
+                    isToggle = ta.getBoolean(attr, true);
                 }
             }
             ta.recycle();
@@ -262,7 +277,7 @@ public class WidgetSwich extends LinearLayout {
 
 
     /**
-     * 是否显示删除按钮
+     * 是否显示开关按钮
      *
      * @param isVisibility
      */

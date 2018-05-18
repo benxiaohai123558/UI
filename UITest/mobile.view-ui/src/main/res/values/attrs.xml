@@ -223,5 +223,6 @@
         <!--开关按钮-->
         <attr name="ws_swich_bg" format="reference" />
         <attr name="ws_swich_visible" format="boolean" />
+        <attr name="ws_swich_toggle" format="boolean"/>
     </declare-styleable>
 </resources>

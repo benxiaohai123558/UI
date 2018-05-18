@@ -1,0 +1,77 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ############################ Start WidgetText theme ############################ -->
+    <!--标题（黑色）+内容（蓝色）+提示hit（灰色）-->
+    <style name="wt_normal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/px44</item>
+    </style>
+
+    <!--标题（黑色）+内容（蓝色）+提示hit（灰色）+箭头-->
+    <style name="wt_arrow" parent="wt_normal">
+        <item name="wt_arrow_visible">true</item>
+    </style>
+    <!--标题（黑色）+内容（蓝色）+提示hit（灰色）+删除按钮+箭头-->
+    <style name="wt_arrow_delete" parent="wt_normal">
+        <item name="wt_arrow_visible">true</item>
+        <item name="wt_delete_visible">true</item>
+    </style>
+    <!--标题（黑色、加粗）+内容（蓝色）+提示hit（灰色）-->
+    <style name="wt_bold" parent="wt_normal">
+        <item name="wt_title_style">true</item>
+    </style>
+    <!--标题（黑色、加粗）+内容（蓝色）+提示hit（灰色）+箭头-->
+    <style name="wt_bold_arrow" parent="wt_normal">
+        <item name="wt_arrow_visible">true</item>
+        <item name="wt_title_style">true</item>
+    </style>
+    <!--标题（黑色）+内容（蓝色）+提示hit（红色）-->
+    <style name="wt_red" parent="wt_normal">
+        <item name="wt_context_hit_color">@color/red</item>
+    </style>
+    <!--标题（黑色）+内容（蓝色）+提示hit（红色）+箭头-->
+    <style name="wt_red_arrow" parent="wt_normal">
+        <item name="wt_arrow_visible">true</item>
+        <item name="wt_context_hit_color">@color/red</item>
+    </style>
+    <!-- ############################ end WidgetText theme ############################ -->
+
+    <!-- ############################ Start WidgetSwich theme ############################ -->
+    <!--标题（黑色）+开关+点击开关样式切换-->
+    <style name="ws_normal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--标题（黑色）+开关+点击开关样式不切换-->
+    <style name="ws_normal_off">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="ws_swich_toggle">false</item>
+    </style>
+    <!--标题（黑色）+说明内容+隐藏开关-->
+    <style name="ws_context" parent="ws_normal">
+        <item name="ws_swich_visible">false</item>
+        <item name="ws_swich_toggle">false</item>
+        <item name="ws_context_visible">true</item>
+    </style>
+    <!--标题（黑色）+说明内容+隐藏开关-->
+    <style name="ws_context_paddingleft" parent="ws_normal">
+        <item name="ws_swich_visible">false</item>
+        <item name="ws_swich_toggle">false</item>
+        <item name="ws_context_visible">true</item>
+        <item name="ws_context_paddingleft">@dimen/px20</item>
+    </style>
+    <!--标题（黑色）+说明内容+开关+点击开关样式切换-->
+    <style name="ws_context_toggle" parent="ws_normal">
+        <item name="ws_context_visible">true</item>
+    </style>
+    <!--标题（黑色）+说明内容+开关+点击开关样式不切换-->
+    <style name="ws_context_toggle_off" parent="ws_normal">
+        <item name="ws_context_visible">true</item>
+        <item name="ws_swich_toggle">false</item>
+    </style>
+
+    <!-- ############################ end WidgetSwich theme ############################ -->
+
+
+</resources>
