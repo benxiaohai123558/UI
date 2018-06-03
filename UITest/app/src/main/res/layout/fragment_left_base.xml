@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px368"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/px4"
+        android:layout_marginTop="@dimen/px4"
+        android:background="@drawable/panel_black_40" />
+
+    <View
+        android:layout_width="@dimen/left_view_width1"
+        android:layout_height="@dimen/px680"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px24"
+        android:background="@drawable/white_background" />
+
+    <View
+        android:layout_width="@dimen/left_view_width2"
+        android:layout_height="@dimen/px2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px704"
+        android:background="@color/white_6alpha" />
+
+    <View
+        android:layout_width="@dimen/left_view_width3"
+        android:layout_height="@dimen/px2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px706"
+        android:background="@color/white_4alpha" />
+
+    <View
+        android:layout_width="@dimen/px200"
+        android:layout_height="@dimen/px44"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px4"
+        android:background="@drawable/img_paperclip" />
+
+    <!-- <ScrollView
+         android:id="@+id/container"
+         android:layout_marginTop="@dimen/px45"
+         android:layout_width="@dimen/px300"
+         android:layout_height="@dimen/px650"
+         android:layout_gravity="center_horizontal"
+         android:scrollbars="none">
+     </ScrollView>-->
+
+    <ViewStub
+        android:id="@+id/viewstub"
+        android:layout_width="@dimen/px300"
+        android:layout_height="@dimen/px650"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px45"></ViewStub>
+
+</FrameLayout>

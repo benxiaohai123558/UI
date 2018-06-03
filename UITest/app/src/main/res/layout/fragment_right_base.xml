@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/px4"
+        android:background="@drawable/panel_black_40" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/px14"
+        android:layout_marginLeft="@dimen/px12"
+        android:layout_marginRight="@dimen/px12"
+        android:layout_marginTop="@dimen/px26"
+        android:background="@drawable/white_background" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/px26"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_title"
+            style="@style/black_large"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/px42"
+            android:gravity="center"
+            android:text="title" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/px2"
+            android:layout_marginLeft="@dimen/px34"
+            android:layout_marginRight="@dimen/px34"
+            android:background="@color/solid_separate" />
+
+        <!--<ScrollView-->
+        <!--android:id="@+id/container"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="@dimen/hpx540"-->
+        <!--android:layout_marginLeft="@dimen/px34"-->
+        <!--android:layout_marginRight="@dimen/px34"-->
+        <!--android:scrollbars="none"></ScrollView>-->
+
+        <ViewStub
+            android:id="@+id/viewstub"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/hpx540"
+            android:layout_marginLeft="@dimen/px34"
+            android:layout_marginRight="@dimen/px34"></ViewStub>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/px2"
+            android:layout_marginLeft="@dimen/px34"
+            android:layout_marginRight="@dimen/px34"
+            android:background="@color/solid_separate" />
+    </LinearLayout>
+
+</FrameLayout>

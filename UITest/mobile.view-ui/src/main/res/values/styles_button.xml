@@ -192,4 +192,58 @@
         <item name="android:text">@string/takeout_check_out</item>
         <item name="android:drawableTop">@drawable/btnicon_charge</item>
     </style>
+
+
+    <!-- ############################ 长方形 Button theme ############################ -->
+    <!--白色长方形按钮样式-->
+    <style name="btn_rectangle_white" parent="black_medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px44</item>
+        <item name="android:background">@drawable/btn_rectangle_white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="btn_rectangle_white_px320" parent="btn_rectangle_white">
+        <item name="android:layout_width">@dimen/px320</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="btn_rectangle_white_px80" parent="btn_rectangle_white">
+        <item name="android:layout_width">@dimen/px80</item>
+    </style>
+
+    <!--蓝色长方形按钮样式-->
+    <style name="btn_rectangle_blue" parent="white_medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px44</item>
+        <item name="android:background">@drawable/btn_rectangle_blue</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="btn_rectangle_blue_px80" parent="btn_rectangle_blue">
+        <item name="android:layout_width">@dimen/px80</item>
+    </style>
+
+    <style name="btn_rectangle_blue_px320" parent="btn_rectangle_blue">
+        <item name="android:layout_width">@dimen/px320</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <!--红色长方形按钮样式-->
+    <style name="btn_rectangle_red" parent="white_medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px44</item>
+        <item name="android:background">@drawable/btn_rectangle_red</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="btn_rectangle_red_px320" parent="btn_rectangle_red">
+        <item name="android:layout_width">@dimen/px320</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="btn_rectangle_red_px80" parent="btn_rectangle_red">
+        <item name="android:layout_width">@dimen/px80</item>
+    </style>
+
+
 </resources>

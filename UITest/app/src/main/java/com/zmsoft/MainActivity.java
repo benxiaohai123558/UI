@@ -2,6 +2,10 @@ package com.zmsoft;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.widget.Toast;
 
@@ -10,7 +14,7 @@ import com.zmsoft.widget.listener.IWidgetClickBack;
 import com.zmsoft.widget.listener.IWidgetClickListener;
 import com.zmsoft.ui.WidgetText;
 
-public class MainActivity extends Activity implements IWidgetClickListener, IWidgetClickBack {
+public class MainActivity extends FragmentActivity implements IWidgetClickListener, IWidgetClickBack {
 
     private WidgetText widgetText, widgetText2;
 
@@ -53,5 +57,30 @@ public class MainActivity extends Activity implements IWidgetClickListener, IWid
 
     private void show(String msg) {
         Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
+    }
+
+
+    private void addFragement(Fragment fragment) {
+        try {
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            if (fragment.isHidden()) {
+                ft.show(fragment);
+            } else {
+                if (!fragment.isAdded()) {
+                    ft.add(R.id.contaier, fragment);
+                } else {
+                    ft.show(fragment);
+                }
+            }
+            ft.commitAllowingStateLoss();
+        } catch (Throwable e) {
+        }
+    }
+
+    private void hideFragment(Fragment fragment) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.hide(fragment);
+        transaction.commitAllowingStateLoss();
     }
 }

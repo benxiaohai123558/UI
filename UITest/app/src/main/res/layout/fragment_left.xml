@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <com.zmsoft.ui.WidgetText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:wt_arrow_visible="true"
+        app:wt_context="@string/app_name"
+        app:wt_context_hit="@string/app_name"
+        app:wt_context_hit_color="@color/red"
+        app:wt_delete_visible="false"
+        app:wt_is_selector="false"
+        app:wt_selector_bg="@color/form_selected"
+        app:wt_title="@string/app_name"
+        app:wt_title_color="#0066AA"
+        app:wt_title_size="@dimen/medium"
+        app:wt_title_style="true" />
+
+    <com.zmsoft.ui.WidgetText
+        android:id="@+id/wt1"
+        style="@style/wt_arrow"
+        app:wt_title="商业模式" />
+
+    <com.zmsoft.ui.WidgetText
+        android:id="@+id/wt2"
+        style="@style/wt_normal"
+        app:wt_context="本店会员"
+        app:wt_title="发卡机构" />
+
+    <com.zmsoft.ui.WidgetText
+        style="@style/wt_arrow_delete"
+        app:wt_context="本店会员"
+        app:wt_title="发卡机构" />
+
+    <com.zmsoft.ui.WidgetText
+        style="@style/wt_bold"
+        app:wt_context="优惠规则？"
+        app:wt_title="充值优惠" />
+
+    <com.zmsoft.ui.WidgetText
+        style="@style/wt_arrow"
+        app:wt_context_hit="可不填"
+        app:wt_title="绑定手机号" />
+
+    <com.zmsoft.ui.WidgetText
+        style="@style/wt_red"
+        app:wt_context_hit="必填"
+        app:wt_title="充值金额" />
+
+    <com.zmsoft.ui.WidgetSwich
+        style="@style/ws_normal"
+        app:ws_title="确认点菜完毕单出二次确认框" />
+
+</LinearLayout>

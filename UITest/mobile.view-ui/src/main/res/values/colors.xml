@@ -71,4 +71,11 @@
     <color name="img_orange">#aa6600</color>
     <color name="img_orange_9alpha">#e5cc8800</color>
     <color name="green_9alpha">#e500aa22</color>
+
+    <color name="btn_red_start_9alpha">#e5cc0000</color>
+    <color name="btn_red_end_9alpha">#e5aa0000</color>
+    <color name="btn_red_stroke">#aa0000</color>
+
+    <color name="btn_transparent_start_2alpha">#33ffffff</color>
+    <color name="btn_transparent_end_0alpha">#00ffffff</color>
 </resources>
